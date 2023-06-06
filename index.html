@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Password Strength Calculator</title>
+</head>
+<body>
+    <h2>Password Strength Calculator</h2>
+    <label for="password">Enter your password (min. 4 characters):</label>
+    <input type="text" id="password" name="password" minlength="4">
+    <br>
+    <label for="triesPerSecond">Tries per second (10^x):</label>
+    <input type="range" id="triesPerSecond" name="triesPerSecond" min="1" max="15" value="9">
+    <output id="outputValue" for="triesPerSecond">9</output>
+    <br>
+    <button onclick="calculateTime()">Calculate Time to Crack</button>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
